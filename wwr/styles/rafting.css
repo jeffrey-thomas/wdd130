@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Quicksand&display=swap');
+
+:root{
+    --primary-color:rgb(44, 66, 63);
+    --secondary-color:#B4D2E7;
+    --accent1-color:#7EA172;
+    --accent2-color:#FFCF99;
+    --heading-font:Merriweather, serif;
+    --paragraph-font:Quicksand, sans-serif;
+    --nav-background-color:#92140C;
+    --nav-link-color: #bbbbbb;
+    --nav-hover-link-color:white;
+    --nav-hover-background-color:#c52b20;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--heading-font);
+    color:var(--accent2-color);
+}
+
+p{
+    padding:20px;
+    color:var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color:var(--secondary-color);
+}
+
+body{
+    max-width:900px;
+    background-color: var(--primary-color);
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.hero h1{
+    position:absolute;
+    top:20px;
+    left:250px;
+}
+
+.hero article{
+    position:absolute;
+    top:100px;
+    background-color: rgba(44,66,63,0.8);
+    width:90%;
+    margin:5%;
+}
+
+.hero article > img{
+    width:300px;
+    float:right;
+    margin:20px;
+}
