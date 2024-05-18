@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Quicksand&display=swap');
 
 :root{
-    --primary-color:rgb(44, 66, 63);
-    --secondary-color:#B4D2E7;
-    --accent1-color:#7EA172;
-    --accent2-color:#FFCF99;
+    --primary-color:#b4d2e7;
+    --secondary-color:#2c423f;
+    --accent1-color:#d7b377;
+    --accent2-color:#8f754f;
     --heading-font:Merriweather, serif;
     --paragraph-font:Quicksand, sans-serif;
-    --nav-background-color:#92140C;
-    --nav-link-color: #bbbbbb;
+    --nav-background-color:#3F88C5;
+    --nav-link-color: #dddddd;
     --nav-hover-link-color:white;
-    --nav-hover-background-color:#c52b20;
+    --nav-hover-background-color:#7aadd6;
+}
+
+*{
+    margin:0;
 }
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--heading-font);
     color:var(--accent2-color);
+    text-align:center;
+    margin:20px;
 }
 
 p{
@@ -31,6 +37,51 @@ a {
 body{
     max-width:900px;
     background-color: var(--primary-color);
+    margin:0 auto;
+}
+
+header{
+    display:grid;
+    grid-template-columns:250px 1fr;
+    align-items:center;
+}
+
+nav{
+    display:flex;
+    gap:10px;
+    justify-content: space-around;
+}
+
+nav a{
+    display:block;
+    flex:1 1 auto;
+    background-color:var(--nav-background-color);
+    color:var(--nav-link-color);
+    text-align:center;
+    padding:20px;
+    font-size:1.2rem;
+}
+
+nav a:hover{
+    color:var(--nav-hover-link-color);
+    background-color:var(--nav-hover-background-color);
+}
+
+figcaption{
+    text-align:center;
+}
+
+footer{
+    text-align:center;
+    display:grid;
+    grid-template-columns: 1fr 32px 32px 32px;
+    align-items:center;
+    margin-top: 20px;
+}
+
+footer img{
+    width:32px;
+    height:auto;
 }
 
 .hero {
@@ -52,13 +103,22 @@ body{
 .hero article{
     position:absolute;
     top:100px;
-    background-color: rgba(44,66,63,0.8);
+    background-color: rgba(215, 179, 119,0.8);
     width:90%;
     margin:5%;
 }
 
 .hero article > img{
-    width:300px;
+    width:200px;
     float:right;
     margin:20px;
+}
+
+.adventure{
+    display:flex;
+    gap:10px;
+}
+
+.adventure img{
+    max-width:100%;
 }
