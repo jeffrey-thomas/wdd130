@@ -2,19 +2,20 @@
 
 :root{
     --primary-color:#b4d2e7;
-    --secondary-color:#2c423f;
+    --secondary-color:#07004d;
     --accent1-color:#d7b377;
-    --accent2-color:#8f754f;
+    --accent2-color:#535353;
     --heading-font:Merriweather, serif;
     --paragraph-font:Quicksand, sans-serif;
-    --nav-background-color:#3F88C5;
-    --nav-link-color: #dddddd;
+    --nav-background-color:#07004d;
+    --nav-link-color: #eeeeee;
     --nav-hover-link-color:white;
-    --nav-hover-background-color:#7aadd6;
+    --nav-hover-background-color:#020887;
 }
 
 *{
     margin:0;
+    padding:0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -84,6 +85,31 @@ footer img{
     height:auto;
 }
 
+form{
+    width:400px;
+    margin:0 auto;
+    background-color:var(--accent1-color);
+    display:grid;
+    gap:20px;
+    padding:40px;
+    align-items:center;
+    border-radius:10px;
+}
+
+input{
+    padding:5px;
+    width:100%;
+}
+
+label{
+    padding:5px;
+}
+
+textarea{
+    width:100%;
+    padding:5px;
+}
+
 .hero {
     position: relative;
 }
@@ -121,4 +147,77 @@ footer img{
 
 .adventure img{
     max-width:100%;
+}
+
+.contact-info{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items:center;
+    justify-items: center;
+}
+
+.contact-info p{
+    grid-column: 2;
+}
+
+.contact-info iframe{
+    grid-column:3;
+    grid-row: 1 / 4;
+
+    border:0;
+    width:400px;
+    height:300px;
+}
+
+.employees{
+    display:flex;
+    gap:10px;
+}
+
+.employees img{
+    max-width:100%;
+}
+
+.form-item{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:center;
+    justify-content:center;
+}
+
+.label-before{
+    display:flex;
+}
+
+.label-after{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.label-above{
+    display:flex;
+    flex-direction:column;
+}
+
+.label-above label{
+    align-self:start;
+    padding:0;
+}
+
+input[type="radio"]{
+    justify-self:end;
+}
+
+fieldset{
+    border:0;
+}
+
+button{
+    background-color: var(--secondary-color);
+    color:white;
+    font-size:1.25rem;
+    width:200px;
+    padding:10px;
+    border-radius:10px;
+    justify-self:center;
 }
