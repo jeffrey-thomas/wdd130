@@ -221,14 +221,14 @@ height:300px;
     position:absolute;
     top:30%;
     left:50%;
-    color:var(--nav-link-color)
+    color:var(--accent1-color)
 }
 
 .action-call h2{
     position:absolute;
     top:50%;
     left:50%;
-    color:var(--nav-link-color)
+    color:var(--accent1-color)
 }
 
 .trips{
