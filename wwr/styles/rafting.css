@@ -217,18 +217,15 @@ height:300px;
     
 }
 
-.action-call h1{
+.action-call-text{
     position:absolute;
     top:30%;
     left:50%;
-    color:var(--accent1-color)
+    background-color:rgba(0,0,0,0.5);
 }
 
-.action-call h2{
-    position:absolute;
-    top:50%;
-    left:50%;
-    color:var(--accent1-color)
+.action-call h1, .action-call h2{
+    color:var(--nav-link-color)
 }
 
 .trips{
